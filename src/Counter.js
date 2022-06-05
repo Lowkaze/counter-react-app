@@ -1,15 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function Counter() {
   const [count, setCount] = useState(0)
-
-  const incrementCount = () => {
-    setCount(currCount => currCount + 1);
-  }
-
-  const decrementCount = () => {
-    setCount(currCount => currCount - 1);
-  }
+  const incrementCount = () => setCount(currCount => currCount + 1);
+  const decrementCount = () => setCount(currCount => currCount - 1);
 
   return (
     <div className="bg-zinc-900 w-full h-screen flex items-center justify-center gap-10 text-center">
